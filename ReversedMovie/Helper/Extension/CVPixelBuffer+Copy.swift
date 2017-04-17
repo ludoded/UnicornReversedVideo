@@ -10,10 +10,14 @@ import CoreVideo
 
 extension CVPixelBuffer {
     func deepcopy() -> CVPixelBuffer {
+        /// 1
         precondition(CFGetTypeID(self) == CVPixelBufferGetTypeID(), "copy() cannot be called on a non-CVPixelBuffer")
         
+        /// 2
         let attr = CVBufferGetAttachments(self, .shouldPropagate)
         var _copy : CVPixelBuffer? = nil
+        
+        /// 3
         CVPixelBufferCreate(
             CFAllocatorGetDefault().takeRetainedValue(),
             CVPixelBufferGetWidth(self),
@@ -24,9 +28,11 @@ extension CVPixelBuffer {
         
         guard let copy = _copy else { fatalError() }
         
+        /// 4
         CVPixelBufferLockBaseAddress(self, .readOnly)
         CVPixelBufferLockBaseAddress(copy, CVPixelBufferLockFlags(rawValue: CVOptionFlags(0)))
         
+        /// 5
         let planeCount = CVPixelBufferGetPlaneCount(self)
         
         for plane in 0..<planeCount {
@@ -38,6 +44,7 @@ extension CVPixelBuffer {
             memcpy(dest, source, height * bytesPerRow)
         }
         
+        /// 6
         CVPixelBufferUnlockBaseAddress(copy, CVPixelBufferLockFlags(rawValue: CVOptionFlags(0)))
         CVPixelBufferUnlockBaseAddress(self, .readOnly)
         

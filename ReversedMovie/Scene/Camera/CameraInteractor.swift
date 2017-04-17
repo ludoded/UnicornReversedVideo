@@ -27,27 +27,33 @@ final class CameraInteractor: NSObject {
     fileprivate var converter: MovieConverter!
     
     func prepareSession() {
+        /// 1
         captureSession = AVCaptureSession()
         
+        /// 2
         let input = try? AVCaptureDeviceInput(device: connectedDevice())
         if captureSession.canAddInput(input) {
             captureSession.addInput(input)
         }
         
+        /// 3
         captureSession.sessionPreset = AVCaptureSessionPresetHigh
         captureSession.startRunning()
         
+        /// 4
         dataOutput = AVCaptureVideoDataOutput()
         dataOutput.videoSettings = [
             String(kCVPixelBufferPixelFormatTypeKey) : Int(kCVPixelFormatType_420YpCbCr8BiPlanarFullRange)
         ]
-        dataOutput.alwaysDiscardsLateVideoFrames = true
         
         if captureSession.canAddOutput(dataOutput) {
            captureSession.addOutput(dataOutput)
         }
+        
+        /// 5
         captureSession.commitConfiguration()
         
+        /// 6
         let queue: DispatchQueue = DispatchQueue(label: "VideoOutputQueue")
         dataOutput.setSampleBufferDelegate(self, queue: queue)
         dataOutput.connection(withMediaType: AVMediaTypeVideo).videoOrientation = .portrait
@@ -60,6 +66,7 @@ final class CameraInteractor: NSObject {
     }
     
     fileprivate func connectedDevice() -> AVCaptureDevice! {
+        /// 7
         if #available(iOS 10.0, *) {
             return AVCaptureDevice.defaultDevice(withDeviceType: AVCaptureDeviceType.builtInWideAngleCamera, mediaType: AVMediaTypeVideo, position: .back)
         }
@@ -74,9 +81,9 @@ final class CameraInteractor: NSObject {
         output.presentProcessing()
         
         var requestBuffer = buffers
-        buffers[0 ... buffers.count - 2].reversed().forEach({ requestBuffer.append($0.deepcopy()) })
+        buffers[0 ... buffers.count - 2].reversed().forEach { requestBuffer.append($0.deepcopy()) }
         
-        converter = MovieConverter(buffer: requestBuffer)
+        converter = MovieConverter(buffer: requestBuffer, fps: 30)
         
         converter.build({ (_) in },
                         success: { [weak self] (url) in
@@ -109,13 +116,18 @@ final class CameraInteractor: NSObject {
 
 extension CameraInteractor: AVCaptureVideoDataOutputSampleBufferDelegate {
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputSampleBuffer sampleBuffer: CMSampleBuffer!, from connection: AVCaptureConnection!) {
+        /// 1
         guard let cvBuf = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
         
+        /// 2
         if captureOutput is AVCaptureVideoDataOutput, recordShallStart {
+            /// 3
             let copiedCvBuf = cvBuf.deepcopy()
+            
             buffers.append(copiedCvBuf)
             progress?(Float(buffers.count) / Float(totalFrames))
             
+            /// 4
             if buffers.count >= totalFrames {
                 recordShallStart = false
                 merge()
