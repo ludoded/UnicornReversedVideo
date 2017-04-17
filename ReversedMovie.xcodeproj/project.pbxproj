@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2ADBBD81EA4DAF7005857E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBBD71EA4DAF7005857E6 /* AppDelegate.swift */; };
+		B2ADBBDA1EA4DAF7005857E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBBD91EA4DAF7005857E6 /* ViewController.swift */; };
+		B2ADBBDD1EA4DAF7005857E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2ADBBDB1EA4DAF7005857E6 /* Main.storyboard */; };
+		B2ADBBDF1EA4DAF7005857E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2ADBBDE1EA4DAF7005857E6 /* Assets.xcassets */; };
+		B2ADBBE21EA4DAF7005857E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2ADBBE01EA4DAF7005857E6 /* LaunchScreen.storyboard */; };
+		B2ADBBED1EA4DAF7005857E6 /* ReversedMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBBEC1EA4DAF7005857E6 /* ReversedMovieTests.swift */; };
+		B2ADBBFA1EA4DCAE005857E6 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBBF91EA4DCAE005857E6 /* CameraViewController.swift */; };
+		B2ADBBFB1EA4DCAE005857E6 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBBF91EA4DCAE005857E6 /* CameraViewController.swift */; };
+		B2ADBBFD1EA4E310005857E6 /* CameraInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBBFC1EA4E310005857E6 /* CameraInteractor.swift */; };
+		B2ADBBFE1EA4E310005857E6 /* CameraInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBBFC1EA4E310005857E6 /* CameraInteractor.swift */; };
+		B2ADBC001EA4E33A005857E6 /* CameraConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBBFF1EA4E33A005857E6 /* CameraConfigurator.swift */; };
+		B2ADBC011EA4E33A005857E6 /* CameraConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBBFF1EA4E33A005857E6 /* CameraConfigurator.swift */; };
+		B2ADBC031EA4E3E6005857E6 /* CameraPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBC021EA4E3E6005857E6 /* CameraPresenter.swift */; };
+		B2ADBC041EA4E3E6005857E6 /* CameraPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBC021EA4E3E6005857E6 /* CameraPresenter.swift */; };
+		B2ADBC081EA4F53E005857E6 /* CVPixelBuffer+Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBC071EA4F53E005857E6 /* CVPixelBuffer+Copy.swift */; };
+		B2ADBC091EA4F53E005857E6 /* CVPixelBuffer+Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBC071EA4F53E005857E6 /* CVPixelBuffer+Copy.swift */; };
+		B2ADBC0B1EA4F5E2005857E6 /* MovieConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBC0A1EA4F5E2005857E6 /* MovieConverter.swift */; };
+		B2ADBC0C1EA4F5E2005857E6 /* MovieConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBC0A1EA4F5E2005857E6 /* MovieConverter.swift */; };
+		B2ADBC0E1EA4F7DB005857E6 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBC0D1EA4F7DB005857E6 /* CameraModel.swift */; };
+		B2ADBC0F1EA4F7DB005857E6 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBC0D1EA4F7DB005857E6 /* CameraModel.swift */; };
+		B2ADBC111EA4FA62005857E6 /* PhotoAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBC101EA4FA62005857E6 /* PhotoAlbum.swift */; };
+		B2ADBC121EA4FA62005857E6 /* PhotoAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBC101EA4FA62005857E6 /* PhotoAlbum.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2ADBBE91EA4DAF7005857E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2ADBBCC1EA4DAF7005857E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2ADBBD31EA4DAF7005857E6;
+			remoteInfo = ReversedMovie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B2ADBBD41EA4DAF7005857E6 /* ReversedMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReversedMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2ADBBD71EA4DAF7005857E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2ADBBD91EA4DAF7005857E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2ADBBDC1EA4DAF7005857E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2ADBBDE1EA4DAF7005857E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2ADBBE11EA4DAF7005857E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2ADBBE31EA4DAF7005857E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2ADBBE81EA4DAF7005857E6 /* ReversedMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReversedMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2ADBBEC1EA4DAF7005857E6 /* ReversedMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversedMovieTests.swift; sourceTree = "<group>"; };
+		B2ADBBEE1EA4DAF7005857E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2ADBBF91EA4DCAE005857E6 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = Scene/Camera/CameraViewController.swift; sourceTree = "<group>"; };
+		B2ADBBFC1EA4E310005857E6 /* CameraInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraInteractor.swift; path = Scene/Camera/CameraInteractor.swift; sourceTree = "<group>"; };
+		B2ADBBFF1EA4E33A005857E6 /* CameraConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraConfigurator.swift; path = Scene/Camera/CameraConfigurator.swift; sourceTree = "<group>"; };
+		B2ADBC021EA4E3E6005857E6 /* CameraPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraPresenter.swift; path = Scene/Camera/CameraPresenter.swift; sourceTree = "<group>"; };
+		B2ADBC071EA4F53E005857E6 /* CVPixelBuffer+Copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CVPixelBuffer+Copy.swift"; path = "Helper/Extension/CVPixelBuffer+Copy.swift"; sourceTree = "<group>"; };
+		B2ADBC0A1EA4F5E2005857E6 /* MovieConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieConverter.swift; path = Scene/Camera/MovieConverter.swift; sourceTree = "<group>"; };
+		B2ADBC0D1EA4F7DB005857E6 /* CameraModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraModel.swift; path = Scene/Camera/CameraModel.swift; sourceTree = "<group>"; };
+		B2ADBC101EA4FA62005857E6 /* PhotoAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoAlbum.swift; path = Scene/Camera/PhotoAlbum.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2ADBBD11EA4DAF7005857E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2ADBBE51EA4DAF7005857E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2ADBBCB1EA4DAF7005857E6 = {
+			isa = PBXGroup;
+			children = (
+				B2ADBBD61EA4DAF7005857E6 /* ReversedMovie */,
+				B2ADBBEB1EA4DAF7005857E6 /* ReversedMovieTests */,
+				B2ADBBD51EA4DAF7005857E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2ADBBD51EA4DAF7005857E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADBBD41EA4DAF7005857E6 /* ReversedMovie.app */,
+				B2ADBBE81EA4DAF7005857E6 /* ReversedMovieTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2ADBBD61EA4DAF7005857E6 /* ReversedMovie */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADBC051EA4F514005857E6 /* Helper */,
+				B2ADBBF71EA4DC8C005857E6 /* Scene */,
+				B2ADBBD71EA4DAF7005857E6 /* AppDelegate.swift */,
+				B2ADBBD91EA4DAF7005857E6 /* ViewController.swift */,
+				B2ADBBDB1EA4DAF7005857E6 /* Main.storyboard */,
+				B2ADBBDE1EA4DAF7005857E6 /* Assets.xcassets */,
+				B2ADBBE01EA4DAF7005857E6 /* LaunchScreen.storyboard */,
+				B2ADBBE31EA4DAF7005857E6 /* Info.plist */,
+			);
+			path = ReversedMovie;
+			sourceTree = "<group>";
+		};
+		B2ADBBEB1EA4DAF7005857E6 /* ReversedMovieTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADBBEC1EA4DAF7005857E6 /* ReversedMovieTests.swift */,
+				B2ADBBEE1EA4DAF7005857E6 /* Info.plist */,
+			);
+			path = ReversedMovieTests;
+			sourceTree = "<group>";
+		};
+		B2ADBBF71EA4DC8C005857E6 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADBBF81EA4DC91005857E6 /* Camera */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		B2ADBBF81EA4DC91005857E6 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADBBFF1EA4E33A005857E6 /* CameraConfigurator.swift */,
+				B2ADBBF91EA4DCAE005857E6 /* CameraViewController.swift */,
+				B2ADBBFC1EA4E310005857E6 /* CameraInteractor.swift */,
+				B2ADBC021EA4E3E6005857E6 /* CameraPresenter.swift */,
+				B2ADBC0D1EA4F7DB005857E6 /* CameraModel.swift */,
+				B2ADBC0A1EA4F5E2005857E6 /* MovieConverter.swift */,
+				B2ADBC101EA4FA62005857E6 /* PhotoAlbum.swift */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		B2ADBC051EA4F514005857E6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADBC061EA4F519005857E6 /* Extension */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		B2ADBC061EA4F519005857E6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADBC071EA4F53E005857E6 /* CVPixelBuffer+Copy.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2ADBBD31EA4DAF7005857E6 /* ReversedMovie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2ADBBF11EA4DAF7005857E6 /* Build configuration list for PBXNativeTarget "ReversedMovie" */;
+			buildPhases = (
+				B2ADBBD01EA4DAF7005857E6 /* Sources */,
+				B2ADBBD11EA4DAF7005857E6 /* Frameworks */,
+				B2ADBBD21EA4DAF7005857E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReversedMovie;
+			productName = ReversedMovie;
+			productReference = B2ADBBD41EA4DAF7005857E6 /* ReversedMovie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2ADBBE71EA4DAF7005857E6 /* ReversedMovieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2ADBBF41EA4DAF7005857E6 /* Build configuration list for PBXNativeTarget "ReversedMovieTests" */;
+			buildPhases = (
+				B2ADBBE41EA4DAF7005857E6 /* Sources */,
+				B2ADBBE51EA4DAF7005857E6 /* Frameworks */,
+				B2ADBBE61EA4DAF7005857E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2ADBBEA1EA4DAF7005857E6 /* PBXTargetDependency */,
+			);
+			name = ReversedMovieTests;
+			productName = ReversedMovieTests;
+			productReference = B2ADBBE81EA4DAF7005857E6 /* ReversedMovieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2ADBBCC1EA4DAF7005857E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Unicorn;
+				TargetAttributes = {
+					B2ADBBD31EA4DAF7005857E6 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 2JRU28287L;
+						ProvisioningStyle = Automatic;
+					};
+					B2ADBBE71EA4DAF7005857E6 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B2ADBBD31EA4DAF7005857E6;
+					};
+				};
+			};
+			buildConfigurationList = B2ADBBCF1EA4DAF7005857E6 /* Build configuration list for PBXProject "ReversedMovie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2ADBBCB1EA4DAF7005857E6;
+			productRefGroup = B2ADBBD51EA4DAF7005857E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2ADBBD31EA4DAF7005857E6 /* ReversedMovie */,
+				B2ADBBE71EA4DAF7005857E6 /* ReversedMovieTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2ADBBD21EA4DAF7005857E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2ADBBE21EA4DAF7005857E6 /* LaunchScreen.storyboard in Resources */,
+				B2ADBBDF1EA4DAF7005857E6 /* Assets.xcassets in Resources */,
+				B2ADBBDD1EA4DAF7005857E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2ADBBE61EA4DAF7005857E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2ADBBD01EA4DAF7005857E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2ADBBDA1EA4DAF7005857E6 /* ViewController.swift in Sources */,
+				B2ADBC001EA4E33A005857E6 /* CameraConfigurator.swift in Sources */,
+				B2ADBC081EA4F53E005857E6 /* CVPixelBuffer+Copy.swift in Sources */,
+				B2ADBBFD1EA4E310005857E6 /* CameraInteractor.swift in Sources */,
+				B2ADBC031EA4E3E6005857E6 /* CameraPresenter.swift in Sources */,
+				B2ADBBD81EA4DAF7005857E6 /* AppDelegate.swift in Sources */,
+				B2ADBC111EA4FA62005857E6 /* PhotoAlbum.swift in Sources */,
+				B2ADBBFA1EA4DCAE005857E6 /* CameraViewController.swift in Sources */,
+				B2ADBC0B1EA4F5E2005857E6 /* MovieConverter.swift in Sources */,
+				B2ADBC0E1EA4F7DB005857E6 /* CameraModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2ADBBE41EA4DAF7005857E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2ADBBED1EA4DAF7005857E6 /* ReversedMovieTests.swift in Sources */,
+				B2ADBBFB1EA4DCAE005857E6 /* CameraViewController.swift in Sources */,
+				B2ADBBFE1EA4E310005857E6 /* CameraInteractor.swift in Sources */,
+				B2ADBC041EA4E3E6005857E6 /* CameraPresenter.swift in Sources */,
+				B2ADBC0C1EA4F5E2005857E6 /* MovieConverter.swift in Sources */,
+				B2ADBC121EA4FA62005857E6 /* PhotoAlbum.swift in Sources */,
+				B2ADBC011EA4E33A005857E6 /* CameraConfigurator.swift in Sources */,
+				B2ADBC0F1EA4F7DB005857E6 /* CameraModel.swift in Sources */,
+				B2ADBC091EA4F53E005857E6 /* CVPixelBuffer+Copy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2ADBBEA1EA4DAF7005857E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2ADBBD31EA4DAF7005857E6 /* ReversedMovie */;
+			targetProxy = B2ADBBE91EA4DAF7005857E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B2ADBBDB1EA4DAF7005857E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2ADBBDC1EA4DAF7005857E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2ADBBE01EA4DAF7005857E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2ADBBE11EA4DAF7005857E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2ADBBEF1EA4DAF7005857E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2ADBBF01EA4DAF7005857E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2ADBBF21EA4DAF7005857E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2JRU28287L;
+				INFOPLIST_FILE = ReversedMovie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.unicorn.ReversedMovie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B2ADBBF31EA4DAF7005857E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2JRU28287L;
+				INFOPLIST_FILE = ReversedMovie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.unicorn.ReversedMovie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B2ADBBF51EA4DAF7005857E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ReversedMovieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.unicorn.ReversedMovieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReversedMovie.app/ReversedMovie";
+			};
+			name = Debug;
+		};
+		B2ADBBF61EA4DAF7005857E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ReversedMovieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.unicorn.ReversedMovieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReversedMovie.app/ReversedMovie";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2ADBBCF1EA4DAF7005857E6 /* Build configuration list for PBXProject "ReversedMovie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2ADBBEF1EA4DAF7005857E6 /* Debug */,
+				B2ADBBF01EA4DAF7005857E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2ADBBF11EA4DAF7005857E6 /* Build configuration list for PBXNativeTarget "ReversedMovie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2ADBBF21EA4DAF7005857E6 /* Debug */,
+				B2ADBBF31EA4DAF7005857E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B2ADBBF41EA4DAF7005857E6 /* Build configuration list for PBXNativeTarget "ReversedMovieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2ADBBF51EA4DAF7005857E6 /* Debug */,
+				B2ADBBF61EA4DAF7005857E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2ADBBCC1EA4DAF7005857E6 /* Project object */;
+}
